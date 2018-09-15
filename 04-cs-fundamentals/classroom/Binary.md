@@ -1,37 +1,36 @@
 # Introduction to Binary & Memory
-## Learning Goals
-+ Understand binary
-  + Convert from binary to decimal
-  + Convert from decimal to binary
-+ In the context of computer memory, understand
-  + Bits
-  + Bytes
-  + How data is stored in memory
-  + High level computer organization: CPU, Main memory & Bus
-
-## Pre-work: Essential Reading and Viewing:
-Essential reading for before and after this class:
+## Required work before this class
+Before this first CS Fundamentals class, please read, view and complete the exercises on the following links:
+  + [Essential Mathematics for Software Engineers](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/04-cs-fundamentals/classroom/Essential%20Mathematics.md)
   + [Computer Data Basics](https://docs.google.com/document/d/1g-Dxn1rVTChBs9ZZSOgmohjP_RoWNyPJTE-m_n35aZ0/edit)
   + [Video: Understand how memory addressing works](https://www.youtube.com/watch?v=F0Ri2TpRBBg) by Prof. Abelardo Pardo, University of Sydney
+If you have any questions, please email or slack your instructor.
 
-## Exercises
-Here's the exercises we'll cover in class
-1. Devise an algorithm to accept 8 binary digits from a user. Convert this eight-digit binary number to decimal number using the approach we learned in class.
-2. Calculate the decimal equivalent for these binary numbers: 453, 49, 234, 432
-3. Calculate the binary equivalent for these decimal numbers: 1101, 0101, 1001, 1010, 1111, 11000011
+## Learning Goals
++ High level understanding of binary
++ Algorithm to convert from binary to decimal and vice versa
++ High level overview of memory organization on computers
+  + Bits
+  + Bytes
+  + Computer organization: CPU-memory-buses
+  + Memory address
+
 
 ## Assignments
 Assignments are expected to be worked on after the class discussion and due before the next class.
-Fork, clone and complete the assignments below.
-1. Author a method based on the binary to decimal algorithm you devised in class. Read further on [Ada-C9/BinaryAndDecimal](https://github.com/Ada-C9/BinaryAndDecimal)
-2. Determines if the two input integer arrays are equal. The two arrays will be considered equal if they both have the exact same count of elements in the exact same order. Do this without using Ruby methods (except retrieving the value at an index in the Array, comparing two values at a particular index and a method to determine the length of the Array.) Read further on [Ada-C9/array_equals](https://github.com/Ada-C9/array_equals)
-3. [Optional] Write a program to print all possible values that can be represented using 4 bits. e.g. 0000, 0001, 0010, 0011, 0100 ... and so on.
+Fork, clone and complete the assignments below by submitting a pull request:
+1. Author a method based on the binary to decimal algorithm you devised in class. Read further on [Ada-C10/BinaryAndDecimal](https://github.com/Ada-C10/BinaryAndDecimal)
+2. Determines if the two input integer arrays are equal. The two arrays will be considered equal if they both have the exact same count of elements in the exact same order. Do this without using Ruby methods (except retrieving the value at an index in the Array, comparing two values at a particular index and a method to determine the length of the Array.) Read further on [Ada-C10/array_equals](https://github.com/Ada-C10/array_equals)
+- [Optional] Write a program to print all possible values that can be represented using 4 bits. e.g. 0000, 0001, 0010, 0011, 0100 ... and so on.
+- [Optional] Understand pros and cons of organizing data in different structures. See assignment on [Ada-C10/array_or_hash](https://github.com/Ada-C10/array_or_hash).
 
 ## Additional Resources:
 Videos and additional reading material for furthering your learning for curiosity on topics related to what we covered in class:
    + [Video: Binary and Hexadecimal number systems by Khan Academy](https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/number-systems-introduction)
    + [Boston University slide deck on Binary Numbers](http://www.cs.bu.edu/courses/cs101/old/2013spring/slides/CS101.03.BinaryNumbers.ppt.pdf)
    + Blog post by Vaidehi Joshi on [Bits, Bytes, Building with Binary](https://medium.com/basecs/bits-bytes-building-with-binary-13cb4289aafa)
+   + [Video: Crash Course in Computer Science with Carrie Anne Philbin, PBS](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
+   + [Understanding Big and Little Endian Byte order - BetterExplained.com](https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/)
    + [Why do array indexes start with zero - Quora discussion](https://www.quora.com/Why-do-array-indexes-start-with-0-zero-in-many-programming-languages)
    + [Original paper on when we started counting with 0: Why numbering should start at zero? - by E. W. Dijkstra](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)
    + [Does *bit rate* matter? - a blog on online-convert](http://blog.online-convert.com/does-bit-rate-matter-test-yourself-audio-examples/)

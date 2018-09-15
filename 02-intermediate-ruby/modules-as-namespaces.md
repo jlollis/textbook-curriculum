@@ -72,7 +72,7 @@ For example, imagine we're building an inventory management system for an arts a
 It's a similar idea to putting files into directories.  Files in the same directory cannot have the same name, but files in different directories may.
 
 ```ruby
-module Inventory
+module CraftStore
   class String
     def initialize(color, quantity)
       @color = color
@@ -81,16 +81,16 @@ module Inventory
   end
 end
 
-our_string = Inventory::String.new("green", 100)
+our_string = CraftStore::String.new("green", 100)
 ruby_string = String.new("ruby string")
 
 puts our_string.class
 puts ruby_string.class
 ```
 
-The two `String` classes can work alongside each other.  This is because we _namespaced_ our `String` class under the `Inventory` Module.
+The two `String` classes can work alongside each other.  This is because we _namespaced_ our `String` class under the `CraftSTore` Module.
 
-The `::` operator looks up objects and classes within a module, in this case we use it to look up the `Inventory` Module's `String` class.
+The `::` operator looks up objects and classes within a module, in this case we use it to look up the `CraftStore` Module's `String` class.
 
 Leaving off the module makes us extend the `String` class globally which could lead to side-effects if not every part of our program does not expect the new behavior.
 
@@ -110,6 +110,8 @@ our_string = String.new("Ruby string")
 ## Example: Card Games
 
 Namespaces/Modules become especially important when we include libraries into our code.  Different library authors may use the same names in their code and we want to avoid conflicts.
+
+Let's look at an example of implementing different card games with conflicting names. For example, maybe your code base needs to implement both [Blackjack](https://en.wikipedia.org/wiki/Blackjack) and [Canasta](https://en.wikipedia.org/wiki/Canasta). Both of these games have very different rules, but both utilize a domain model (class) that should both be named Card. However, in Blackjack, a Card behaves differently than a Card in Canasta. If we have these two classes in our codebase, and they are both `Card`, what happens?
 
 ```ruby
 # blackjack.rb
@@ -142,7 +144,7 @@ puts canasta_card.max_value   # => 50
 
 ```
 
-Because the canasta gem is loaded after blackjack it overrides blackjack's definition of Card and thus the version of card we end up using is canasta's.
+Because the Canasta file is loaded after Blackjack it overrides Blackjack's definition of `Card` and thus the version of card we end up using is Canasta's.
 
 We can avoid this by using namespaces.
 
