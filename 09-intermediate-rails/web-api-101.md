@@ -10,6 +10,8 @@ A web API is a programmatic interface to request and deliver data using HTTP. Th
 
 APIs interact using HTTP so all that we've learned about the response-request cycle in Rails will apply to the way we'll use APIs as well.
 
+![diagram from http://www.mukeshkumar.net/articles/web-api ](./images/api-diagram.jpg)
+
 ## Data Formats
 APIs use specific data formats because the only way for computers to interact with one another is by agreeing upon the way that communication will happen. Generally this communication happens using some kind of text format. Typically API data is JSON or XML. Most modern web API's use JSON, but plenty of XML APIs are still in use.
 
@@ -127,3 +129,7 @@ Used to retrieve information about all different media types within iTunes.
 Oftentimes APIs are available for general use to the public. To ensure that the API creator can appropriately monitor and secure their API, they require the API consumer to unique identify themselves using an **API Key**. Each API creator determines how to provide the key along with your request, so it is different for different providers.
 
 The three examples above do not require an API key, so we can make requests and see the responses without doing anything special. Most of these APIs provide _some_ amount of data without authenticating, but certain things will be locked down. For example, the API endpoint to retrieve the GitHub teams for a given organization (https://api.github.com/orgs/AdaGold/teams) requires authentication.
+
+## Resources
+
+* [Programmable Web](https://www.programmableweb.com/) - A site dedicated to news and information about APIs
